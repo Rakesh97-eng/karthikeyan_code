@@ -1,0 +1,22 @@
+// Use for any custom css
+
+// For this specific PR
+// will find a better way to handle this
+#root {
+  background-color: var(--neutral-tertiary);
+}
+.reset-Link {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.MuiPopperUnstyled-root {
+  .MuiTypography-root,
+  .MuiButtonBase-root {
+    font-family: cadiz, sans-serif;
+  }
+}
+
+.sidebar-open {
+  overflow: hidden;
+}

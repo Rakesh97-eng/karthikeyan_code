@@ -1,0 +1,3 @@
+export enum FORM_ACTION_TYPES {
+  UPDATE_FORM = 'UPDATE_FORM',
+}

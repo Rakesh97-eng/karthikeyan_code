@@ -1,0 +1,185 @@
+import styled from '@emotion/styled';
+
+export const ScheduleBodyWrapper = styled('div')({
+  flex: 1,
+  width: '100%',
+  padding: '0 8px',
+  overflow: 'hidden',
+  '.workingHourWrapper': {
+    paddingTop: '16px',
+    width: '41px',
+    float: 'left',
+    '.workingHour': {
+      width: '30px',
+      height: '100px',
+      color: 'var(--neutral-primary-light)',
+    },
+  },
+  '.workingShiftGridWrapper': {
+    float: 'left',
+    overflowY: 'hidden',
+    overflowX: 'auto',
+    width: 'calc(100% - 50px)',
+    '.workingShiftGrid': {
+      overflowY: 'hidden',
+      overflowX: 'auto',
+      '.workingShiftGridColumn': {
+        position: 'relative',
+        '.workingShiftGridHeader': {
+          height: '24px',
+          boxSizing: 'border-box',
+          border: '.5px solid var(--neutral-secondary-darker)',
+          textAlign: 'center',
+          paddingTop: '4px',
+          color: 'var(--neutral-primary)',
+          lineHeight: '16px',
+        },
+        '.workingShiftGridData': {
+          height: '100px',
+          boxSizing: 'border-box',
+          border: '1px solid var(--neutral-secondary-darker)',
+        },
+        '.workingShiftTime': {
+          position: 'absolute',
+          zIndex: 2,
+          borderRadius: '4px',
+        },
+        '.appointmentWrapper': {
+          position: 'absolute',
+          zIndex: 4,
+          borderRadius: '4px',
+          margin: '2px',
+          overflow: 'hidden',
+          '.appointmentStatus': {
+            margin: '10px 12px 0 0',
+            height: '16px',
+            position: 'absolute',
+            right: 0,
+            top: 0,
+            display: 'inline-block',
+            '.appointmentStatusText': {
+              fontWeight: '600',
+              color: 'var(--slate-100)',
+              display: 'inline-block',
+              marginRight: '4px',
+              '@media (max-width: 576px)': {
+                display: 'none',
+              },
+            },
+          },
+          '.appointmentTime': {
+            color: 'var(--slate-100)',
+            margin: '8px 8px 0 12px',
+          },
+          '.appointmentWith': {
+            fontWeight: '700',
+            color: 'var(--slate-100)',
+            margin: '0px 8px 0 12px',
+          },
+          '.appointmentIcons': {
+            margin: '0px 8px 0 12px',
+            fontSize: '16px',
+            img: {
+              marginRight: '4px',
+              height: '16px',
+              width: '16px',
+            },
+          },
+          '.appointmentInfo': {
+            color: 'var(--slate-100)',
+            margin: '6px 100px 0px 16px',
+            overflow: 'hidden',
+            textOverflow: 'ellipsis',
+            whiteSpace: 'nowrap',
+          },
+          '.appointmentMore': {
+            lineHeight: '24px',
+            color: 'var(--slate-100)',
+            margin: '0px 1px 1px 0',
+            background: 'rgba(255, 255, 255, 0.5)',
+            borderRadius: '4px',
+            width: '62px',
+            height: '24px',
+            padding: '0px 8px',
+            position: 'absolute',
+            right: 0,
+            bottom: 0,
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          },
+          '.fullScreen': {
+            display: 'inline-block',
+            margin: '8px 8px 0 0',
+            '@media (max-width: 576px)': {
+              fontSize: '12px',
+              display: 'block',
+              margin: '4px 8px 0 16px',
+            },
+          },
+          '.appointmentMoreFullScreen': {
+            margin: '0px 16px 16px 0',
+          },
+        },
+        '.blockWrapper': {
+          position: 'absolute',
+          zIndex: 3,
+          borderRadius: '4px',
+          margin: '2px',
+          borderWidth: '1.5px',
+          borderStyle: 'solid',
+          overflow: 'hidden',
+          '.blockTime': {
+            color: 'var(--slate-100)',
+            margin: '8px 8px 0 12px',
+          },
+          '.blockTitle': {
+            fontWeight: '700',
+            color: 'var(--slate-100)',
+            margin: '0px 8px 0 12px',
+          },
+          '.fullScreen': {
+            display: 'inline-block',
+            margin: '8px 8px 0 0',
+          },
+        },
+        '.moveLeft': {
+          left: '0px',
+        },
+        '.moveRight': {
+          right: '0px',
+        },
+      },
+    },
+    '.workingShiftGridMin': {
+      width: '240px',
+      float: 'left',
+    },
+    '.workingShiftGridMax': {
+      width: '100%',
+    },
+  },
+  '.workingCurrentTimeWrapper': {
+    position: 'absolute',
+    width: '100%',
+    zIndex: 10,
+    '.currentTimeText': {
+      height: '20px',
+      width: '64px',
+      backgroundColor: 'var(--slate-100)',
+      borderRadius: '16px',
+      display: 'inline-block',
+      color: 'white',
+      padding: '2px 4px',
+      textAlign: 'center',
+    },
+    '.currentTimeLine': {
+      height: '2px',
+      width: 'calc(100% - 72px)',
+      backgroundColor: 'var(--slate-100)',
+      display: 'inline-block',
+      position: 'absolute',
+      top: '12px',
+    },
+  },
+});
